@@ -30,7 +30,7 @@ const BusinessBanner = (props: Props) => {
   return (
     <div className="mt-32 bg-grad">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-2xl lg:text-5xl leading-[53.76px] tracking-wide mt-2 lg:mt-20">
+        <h1 className="text-2xl lg:text-5xl font-bold leading-[53.76px] tracking-wide mt-2 lg:mt-20">
           Grow Your Business Fast
         </h1>
         <p className="text-sm lg:text-lg leading-relaxed mt-1 lg:mt-10">

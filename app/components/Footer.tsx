@@ -50,8 +50,8 @@ const Footer = (props: Props) => {
           />
         </div>
         <hr />
-        <div className="mt-20">
-          <ul className="flex justify-evenly items-center text-gray-500">
+        <div className="mt-20 pb-10">
+          <ul className="flex lg:justify-evenly items-center text-gray-500 text-xs flex-wrap md:flex-row w-[358px] justify-center ">
             <li>Term Of Use</li>
             <li>How It Works</li>
             <li>Getting Started</li>
