@@ -30,18 +30,22 @@ const BusinessBanner = (props: Props) => {
   return (
     <div className="mt-32 bg-grad">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-5xl leading-[53.76px] tracking-wide mt-20">
+        <h1 className="text-2xl lg:text-5xl leading-[53.76px] tracking-wide mt-2 lg:mt-20">
           Grow Your Business Fast
         </h1>
-        <p className="text-lg leading-relaxed mt-10">
+        <p className="text-sm lg:text-lg leading-relaxed mt-1 lg:mt-10">
           Its simple to start leasing our game rentals
         </p>
       </div>
-      <div className="flex items-center justify-center gap-11 mt-11">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex items-center justify-center p-3 gap-6 lg:gap-11 mt-11">
         {businesses.map((business) => (
-          <div className="bg-[#0b0620] rounded-xl w-[305px] h-[218px] flex items-center justify-center flex-col">
-            <img src={business.img} alt="" className="w-[85px] h-[85px]" />
-            <h1 className="mt-6">{business.desc}</h1>
+          <div className="bg-[#0b0620] rounded-xl w-[174px] h-[156px] lg:w-[305px] lg:h-[218px] flex items-center justify-center flex-col">
+            <img
+              src={business.img}
+              alt=""
+              className="lg:w-[85px] lg:h-[85px] w-[64px] h-[64px]"
+            />
+            <h1 className="mt-6 text-sm lg:text-xl">{business.desc}</h1>
           </div>
         ))}
       </div>

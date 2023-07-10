@@ -12,7 +12,7 @@ const Contact = (props: Props) => {
           <h1 className="title font-bold mt-10">Contact Us</h1>
           <p className="subtitle">Any Questions or Remarks? Just message us</p>
         </div>
-        <div className="flex-container gap-36">
+        <div className="flex-container gap-2 lg:gap-36">
           <div className="image-container">
             <img src="/images/contact.png" alt="" className="image" />
           </div>

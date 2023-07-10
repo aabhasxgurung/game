@@ -40,13 +40,13 @@ const certificates = [
 const Certificate = (props: Props) => {
   return (
     <div id="certificate">
-      <h1 className="text-white text-5xl mt-20 tracking-wide">
+      <h1 className="text-white font-bold text-2xl sm:text-4xl lg:text-5xl mt-1 lg:mt-20 tracking-wide">
         Authentic Certified Software
       </h1>
-      <p className="text-white text-xl font-semibold leading-relaxed mt-4">
+      <p className="text-white text-sm lg:text-xl font-thin lg:font-semibold leading-relaxed lg:mt-4">
         Quality Products with top notch support
       </p>
-      <div className="grid grid-cols-3 gap-20 mt-10">
+      <div className="grid grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-20 mt-10">
         {certificates.map((certificate) => (
           <div className="certificate-card ">
             <img src={certificate.image} alt="" />
