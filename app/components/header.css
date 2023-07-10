@@ -1,0 +1,40 @@
+#hero {
+  background: linear-gradient(
+    #6a35ee 100%,
+    #9930ef 100%,
+    #5737ee 100%,
+    #795ceb 100%
+  );
+}
+
+#hero .text {
+  -webkit-text-stroke: 1.5px #15bffd;
+  color: white;
+  font-size: 63px;
+  font-weight: 800;
+  left: 0;
+  letter-spacing: 10.08;
+  line-height: 69.9px;
+  text-align: center;
+  text-shadow: 8px 22px 4px #00000040;
+  top: 0;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+  #hero .text {
+    -webkit-text-stroke: 0.5px #15bffd;
+    font-size: 20px;
+    font-weight: 400px;
+    letter-spacing: 0;
+    line-height: 22.2px;
+  }
+}
+
+#hero .button-grad {
+  background: linear-gradient(
+    #6a35ee 100%,
+    #9930ef 100%,
+    #5737ee 100%,
+    #795ceb 100%
+  );
+}
