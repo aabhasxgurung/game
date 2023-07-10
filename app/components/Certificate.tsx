@@ -1,22 +1,59 @@
 import React from "react";
-import "./certificate.css";
+
+import "./home.css";
 
 type Props = {};
 
-const certificates = [{}];
+const certificates = [
+  {
+    image: "/images/verify.png",
+    title: "Verified Software",
+    desc: "Top Sweepstakes & Skill Based Game Developers (non-knockoff) Ready To Lease In Your Business.",
+  },
+  {
+    image: "/images/hardware.png",
+    title: "Fresh Hardware",
+    desc: "Professionally Fabricated Plug and Play Game Systems Ready To Lease In Your Business.",
+  },
+  {
+    image: "/images/security.png",
+    title: "Advanced Security",
+    desc: "All Systems Equipped With Tracking, Anti-Cheat, & Remote Access With Lock Out Mode.",
+  },
+  {
+    image: "/images/tech.png",
+    title: "Tech Support",
+    desc: "All Products Are Maintained & Serviced With Anytime Tech Support.",
+  },
+  {
+    image: "/images/quality.png",
+    title: "Quality Certified",
+    desc: "Gaming Lab Tested & Approved For Authorized Skill Based & Sweepstakes Games.",
+  },
+  {
+    image: "/images/test.png",
+    title: "Tested & Proven",
+    desc: "Tested & Proven Math Models That Hold True. Community Jackpots That Pop.",
+  },
+];
 
 const Certificate = (props: Props) => {
   return (
-    <div id="certificate" className="">
-      <div className="border-2 border-fuchsia-600 w-[425.33px] h-[372.33px]">
-        <img src="/images/verify.png" alt="" />
-        <h1 className="text-white">Verified Software</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, qui
-          debitis voluptas autem quibusdam animi accusantium. Odio facilis
-          soluta dolorum illo! Ipsam deserunt consequatur accusamus! Odit
-          explicabo aspernatur omnis quasi?
-        </p>
+    <div id="certificate">
+      <h1 className="text-white text-5xl mt-20 tracking-wide">
+        Authentic Certified Software
+      </h1>
+      <p className="text-white text-xl font-semibold leading-relaxed mt-4">
+        Quality Products with top notch support
+      </p>
+      <div className="grid grid-cols-3 gap-20 mt-10">
+        {certificates.map((certificate) => (
+          <div className="certificate-card ">
+            <img src={certificate.image} alt="" />
+            <h1>{certificate.title}</h1>
+            <p>{certificate.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

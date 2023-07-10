@@ -1,5 +1,6 @@
 import React from "react";
-import "./game.css";
+
+import "./home.css";
 
 type Props = {};
 

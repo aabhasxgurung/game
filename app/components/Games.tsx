@@ -1,5 +1,5 @@
 import React from "react";
-import "./game.css";
+
 import GameCard from "./GameCard";
 
 type Props = {};
